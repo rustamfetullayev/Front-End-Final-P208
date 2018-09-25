@@ -1,0 +1,221 @@
+// Font face Fontawesome
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+// End of Font face
+
+// Defaults
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+// End of Defaults
+
+// Preloader
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background-color: white;
+    img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+// End of Preloader
+
+// Error Content
+#error{
+    height: 720px;
+    background-image: url(http://t.commonsupport.com/consultox/images/background/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    h1{
+        font-size: 13em;
+        font-weight: 700;
+    }
+    h3{
+        font-size: 3em;
+        font-weight:600;
+    }
+    h5{
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    button{
+        margin-top: 40px;
+        background-color: #d2b871;
+        padding: 10px 40px;
+        color: white;
+        font-weight: 700;
+        font-size: 1.5em;
+        border: 2px solid #d2b871;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        &:hover{
+            background-color: transparent;
+            color: #d2b871;
+        }
+    }
+}
+
+@media(max-width:1024px){
+    #error{
+        height: 600px;
+        h1{
+            font-size: 6em;
+        }
+        h3{
+            font-size: 1.7em;
+            text-align: center;
+            padding: 0px 10px;
+        }
+        h5{
+            font-size: 1.1em;
+            text-align: center;
+            padding: 0px 10px;
+        }
+        button{
+            padding: 10px 30px;
+            font-size: 1.1em;
+        }
+    }
+}
+// End of Error content
+
+// Main footer
+#main-footer{
+    padding: 60px 0px;
+    background-color: #191c20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inner{
+        img{
+            width: 80%;
+            margin-bottom: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        p{
+            color: #aaaaaa; 
+        }
+        .m_text{
+            font-size: 0.9em;
+            color: #767676;
+        }
+        h5{
+            color: white;
+            font-size: 1.5em;
+        }
+        ul{
+            list-style: none;
+            li{
+                color: #aaaaaa;
+                padding-top: 15px;
+                transition: all 0.3s linear;
+                &:hover{
+                    cursor: pointer;
+                    color: #25baa9;
+                }
+            }
+        }
+        form{
+            display: flex;
+            input{
+                background-color: #131518;
+                width: 210px;
+                padding: 10px 15px;
+                border: 1px solid #26292d;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                outline: none;
+                color: white;
+                &::placeholder{
+                    font-size: 0.9em;
+                }
+            }
+            .button{
+                width: 120px;
+                height: 45px;
+                background-color: #d2b871;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        span{
+            float: left;
+            width: 35px;
+            height: 35px;
+            border: 1px solid #858585;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #858585;
+            margin-right: 10px;
+            margin-top: 20px;
+            transition: all 0.3s linear;
+            &:hover{
+                cursor: pointer;
+                color: #d2b871;
+                border-color: #d2b871;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    #main-footer{
+        .inner{
+            form{
+                .button{
+                    width: 50px;
+                }
+            }
+        }
+    }
+}
+// End of Main footer
+
+// Footer
+footer{
+    padding: 20px 0px;
+    background-color: #131518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h6{
+        text-align: center;
+        color: rgba(255,255,255,0.20);
+        font-size: 0.85em;
+    }
+}
+// End of Footer

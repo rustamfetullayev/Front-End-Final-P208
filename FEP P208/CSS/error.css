@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg"); }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  background-color: white; }
+  #preloader img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%); }
+
+#error {
+  height: 720px;
+  background-image: url(http://t.commonsupport.com/consultox/images/background/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Montserrat', sans-serif; }
+  #error h1 {
+    font-size: 13em;
+    font-weight: 700; }
+  #error h3 {
+    font-size: 3em;
+    font-weight: 600; }
+  #error h5 {
+    font-size: 1.5em;
+    font-weight: 500; }
+  #error button {
+    margin-top: 40px;
+    background-color: #d2b871;
+    padding: 10px 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border: 2px solid #d2b871;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+    #error button:hover {
+      background-color: transparent;
+      color: #d2b871; }
+
+@media (max-width: 1024px) {
+  #error {
+    height: 600px; }
+    #error h1 {
+      font-size: 6em; }
+    #error h3 {
+      font-size: 1.7em;
+      text-align: center;
+      padding: 0px 10px; }
+    #error h5 {
+      font-size: 1.1em;
+      text-align: center;
+      padding: 0px 10px; }
+    #error button {
+      padding: 10px 30px;
+      font-size: 1.1em; } }
+#main-footer {
+  padding: 60px 0px;
+  background-color: #191c20;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #main-footer .inner img {
+    width: 80%;
+    margin-bottom: 20px; }
+    #main-footer .inner img:hover {
+      cursor: pointer; }
+  #main-footer .inner p {
+    color: #aaaaaa; }
+  #main-footer .inner .m_text {
+    font-size: 0.9em;
+    color: #767676; }
+  #main-footer .inner h5 {
+    color: white;
+    font-size: 1.5em; }
+  #main-footer .inner ul {
+    list-style: none; }
+    #main-footer .inner ul li {
+      color: #aaaaaa;
+      padding-top: 15px;
+      transition: all 0.3s linear; }
+      #main-footer .inner ul li:hover {
+        cursor: pointer;
+        color: #25baa9; }
+  #main-footer .inner form {
+    display: flex; }
+    #main-footer .inner form input {
+      background-color: #131518;
+      width: 210px;
+      padding: 10px 15px;
+      border: 1px solid #26292d;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      outline: none;
+      color: white; }
+      #main-footer .inner form input::placeholder {
+        font-size: 0.9em; }
+    #main-footer .inner form .button {
+      width: 120px;
+      height: 45px;
+      background-color: #d2b871;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #main-footer .inner form .button:hover {
+        cursor: pointer; }
+  #main-footer .inner span {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #858585;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #858585;
+    margin-right: 10px;
+    margin-top: 20px;
+    transition: all 0.3s linear; }
+    #main-footer .inner span:hover {
+      cursor: pointer;
+      color: #d2b871;
+      border-color: #d2b871; }
+
+@media (max-width: 1024px) {
+  #main-footer .inner form .button {
+    width: 50px; } }
+footer {
+  padding: 20px 0px;
+  background-color: #131518;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer h6 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 0.85em; }
+
+/*# sourceMappingURL=error.css.map */
